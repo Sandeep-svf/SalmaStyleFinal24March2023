@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.barcode.salmaStyle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- <uses-feature android:name="android.hardware.camera" />
+     <uses-feature android:name="android.hardware.camera2" />
+     <uses-feature android:name="android.hardware.camera.autofocus" />
+ -->
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <uses-feature android:name="android.hardware.camera.any" android:required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <!-- android:dataExtractionRules="@xml/data_extraction_rules"
+     android:fullBackupContent="@xml/backup_rules"-->
+
+    <application
+        android:name="com.barcode.salmaStyle.utol.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SalmaFit"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.barcode.salmaStyle.AppGuidanceActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.NotificationDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.login.ForgetChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.ScanProductDetailActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.barcode.salmaStyle.TermConditionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.AboutusActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.fragment.ScanTabActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.UpdateProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.login.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.login.ForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.login.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.barcode.ScannerBarcodeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.fragment.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.LanguageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.utol.NewVamoQrScanner"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.uploadimagescreen.ProductImageFragment"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.uploadimagescreen.IngeridentImageFragment"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.uploadimagescreen.NutritionFactFragment"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.uploadimagescreen.BarcodeFragment"
+            android:exported="true" />
+        <activity
+            android:name="com.barcode.salmaStyle.login.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.barcode.salmaStyle.imagepicker.ImagePickerActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- uCrop cropping activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" /> <!-- cache directory file provider paths -->
+        <!--
+ <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <service
+            android:name="com.barcode.salmaStyle.firebase.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

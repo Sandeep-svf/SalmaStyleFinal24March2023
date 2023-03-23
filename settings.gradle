@@ -1,0 +1,5 @@
+
+rootProject.name = "SalmaStyle"
+include ':app'
+include ':awesome-code-scanner'
+include ':awesome-code-scanner'

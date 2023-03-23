@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cream_color"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:id="@+id/cons_nav_home"
+        android:weightSum="4"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        >
+
+     <ImageView
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/ic_baseline_home_24"
+         android:layout_weight=".7"
+         android:tint="@color/green"
+          android:backgroundTint="@color/green"
+         app:tint="@color/green"
+         tools:ignore="UseAppTint"
+         android:id="@+id/bottom_nav_home"
+         />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/barcodenew"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.3"
+            app:tint="@color/green"
+            android:backgroundTint="@color/green"
+            android:tint="@color/green"
+            tools:ignore="UseAppTint"
+            android:id="@+id/bottom_nav_qr"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_notifications_active_24"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.3"
+            app:tint="@color/green"
+            android:backgroundTint="@color/green"
+           android:tint="@color/green"
+            tools:ignore="UseAppTint"
+            android:id="@+id/nav_bottom_notification"
+            />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_weight=".8"
+            app:tint="@color/green"
+            android:backgroundTint="@color/green"
+            android:tint="@color/green"
+            tools:ignore="UseAppTint"
+            android:id="@+id/profile_bottom_lay"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

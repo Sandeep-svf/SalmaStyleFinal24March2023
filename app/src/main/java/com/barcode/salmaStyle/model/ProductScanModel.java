@@ -1,0 +1,43 @@
+package com.barcode.salmaStyle.model;
+
+import com.barcode.salmaStyle.response.ProductScanResponse;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class ProductScanModel {
+
+    @SerializedName("status")
+    @Expose
+    private String status;
+    @SerializedName("message")
+    @Expose
+    private String message;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public ProductScanResponse getProductScanResponse() {
+        return productScanResponse;
+    }
+
+    public void setProductScanResponse(ProductScanResponse productScanResponse) {
+        this.productScanResponse = productScanResponse;
+    }
+
+    @SerializedName("data")
+    @Expose
+    private ProductScanResponse productScanResponse;
+}

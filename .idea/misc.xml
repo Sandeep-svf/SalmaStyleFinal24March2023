@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/drawable/custom_verify_background.xml" value="0.14722222222222223" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/drawable/edit_text_border.xml" value="0.14722222222222223" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/activity_otp_verificaation.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/activity_signup.xml" value="0.21" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/activity_update_profile.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/app_bar_main.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/bootom_nav_lay.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/content_main.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/custom_alert_dialog.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/dialog_progressbar.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/email_verification_otp_layout.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/fragment_account.xml" value="0.209375" />
+        <entry key="..\:/Office Project/Mohit_Backup_17_jan_2023/backup17/SlmaStyle23MarchLatest/SalmaFit_latest_23_March/app/src/main/res/layout/fragment_my_profile.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

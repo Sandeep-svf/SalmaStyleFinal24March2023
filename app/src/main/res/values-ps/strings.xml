@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">سلمى ستايل</string>
+    <string name="dashboard">داشبورد</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">پست الکترونیک</string>
+    <string name="prompt_password">کلمه عبور</string>
+    <string name="action_sign_in">وارد شوید یا ثبت نام کنید</string>
+    <string name="action_sign_in_short">ورود</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">اطلاعیه</string>
+    <string name="these_permissions_are_mandatory_for_this_application_please_allow_access">These Permissions are Mandatory for this Application. Please Allow Access.</string>
+
+    <string name="please_connect_internet_connection">لطفا اتصال اینترنت را وصل کنید؟  </string>
+    <string name="retry">دوباره امتحان کنید</string>
+    <string name="cancel">لغو کنید</string>
+    <string name="enter_mobileno_password">شماره موبایل و ایمیل خود را وارد کنید</string>
+    <string name="will_send_otp_messege">ما یک پیام otp برای شما ارسال خواهیم کرد</string>
+    <string name="email">پست الکترونیک</string>
+    <string name="confirm">تایید</string>
+    <string name="sign_in">ورود</string>
+    <string name="password">کلمه عبور</string>
+    <string name="not_yet_member">هنوز عضو نشده</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="my_profile">پروفایل من</string>
+    <string name="scan_products">اسکن محصولات</string>
+    <string name="setting">تنظیمات</string>
+    <string name="about_us">درباره ما</string>
+    <string name="terms_and_condition">شرایط و ضوابط</string>
+    <string name="logout">خروج</string>
+    <string name="signup">ثبت نام</string>
+    <string name="name">نام</string>
+    <string name="confirm_password">رمز عبور را تایید کنید</string>
+    <string name="phone_number">شماره تلفن</string>
+    <string name="update_profile">بروزرسانی پروفایل</string>
+    <string name="edit_profile">ویرایش پروفایل</string>
+    <string name="clear_all">همه را پاک کن</string>
+    <string name="forget_password">فراموشی رمز عبور</string>
+    <string name="want_send_photos">آیا می خواهید عکس اضافه کنید و برای بررسی ارسال کنید؟</string>
+    <string name="enter_name">لطفا نام را وارد کنید</string>
+    <string name="enter_phone">لطفا شماره تلفن را وارد کنید</string>
+    <string name="enter_valid_email">لطفا ایمیل معتبر وارد نمایید</string>
+    <string name="password_validation">رمز عبور خیلی ضعیف است</string>
+    <string name="enter_password">لطفا رمز عبور را وارد کنید</string>
+    <string name="enter_confirm_password">لطفاً تأیید رمز عبور را وارد کنید</string>
+    <string name="enter_old_password">لطفا رمز عبور قدیمی را وارد کنید</string>
+    <string name="pls_enter_same_password">رمز عبور جدید و رمز عبور تأیید باید یکسان باشد</string>
+    <string name="confirm_logout">خروج از سیستم را تایید کنید</string>
+    <string name="are_you_sure_to_logout">آیا مطمئن هستید که از سیستم خارج شوید؟</string>
+    <string name="product_unavailable">محصول در دسترس نیست</string>
+    <string name="ok">خوب</string>
+    <string name="scan_product">اسکن محصولات</string>
+    <string name="new_credential">اسکن محصولات</string>
+    <string name="enter_pas">رمز عبور را وارد کنید</string>
+    <string name="enter_new_pas">رمز عبور جدید را وارد کنید</string>
+    <string name="update">به روز رسانی</string>
+    <string name="updatake_photo_ingerident">از مواد تشکیل دهنده عکس بگیرید</string>
+    <string name="next">بعد</string>
+    <string name="nutrition_fact">عکس حقایق تغذیه را بگیرید</string>
+    <string name="submit">ارسال</string>
+    <string name="product_text_lable">در صورت محصول، تصویر جلد را بگیرید</string>
+    <string name="product_image">وضعیت محصول:</string>
+    <string name="home">صفحه اصلی</string>
+    <string name="ingerident">عناصر</string>
+    <string name="nutri_fact">ارزش غذایی</string>
+    <string name="my_profil">پروفایل من</string>
+    <string name="change_pass">رمز عبور را تغییر دهید</string>
+    <string name="no">خیر</string>
+    <string name="yes">آره</string>
+    <string name="recent_scan">اسکن اخیر</string>
+    <string name="content">محتوا :</string>
+    <string name="english">انگلیسی</string>
+    <string name="farsi">فارسی</string>
+    <string name="more">بیشتر</string>
+    <string name="change_language">تغییر زبان</string>
+    <string name="delete_notification">حذف اعلان</string>
+    <string name="Are_you_sure_delete_all_notification">"آیا می خواهید این اعلان را حذف کنید؟"</string>
+    <string name="new_password">رمز عبور جدید</string>
+    <string name="my_account">حساب من</string>
+    <string name="scan_qr">کد Qr را اسکن کنید</string>
+    <string name="approved">تایید شده</string>
+    <string name="rejected">رد شد</string>
+    <string name="ondiet">در رژیم غذایی</string>
+    <string name="occassionaly">گاه و بیگاه</string>
+    <string name="salma_approved">"سلما تایید کرد 👍👍"</string>
+    <string name="salma_not_approved">"سلما تایید نشد 👎👎"</string>
+    <string name="salma_on_diet">"سلما در حین رژیم تایید نشد 👎"</string>
+    <string name="salma_occ_appr">"سلما گهگاهی تایید می شود 👍"</string>
+    <string name="detail_list">لیست جزئیات</string>
+    <string name="product_image1">تصویر محصول</string>
+    <string name="product_detail">جزئیات محصول</string>
+    <string name="upload_image">آپلود تصویر</string>
+    <string name="pending">در انتظار</string>
+    <string name="ocasion">مناسبت</string>
+    <string name="elect_product_photo">لطفا عکس محصول را انتخاب کنید</string>
+    <string name="select_ingerident_photo">لطفا عکس ingerident را انتخاب کنید</string>
+    <string name="select_nutrition_photo">لطفا عکس تغذیه را انتخاب کنید</string>
+    <string name="photo_not_clear">الصورة غير واضحة</string>
+    <string name="Are_You_sure_delete_all_notification">هل تريد حذف هذه الإخطارات</string>
+    <string name="submit_feedback">تم تحميله بنجاح على سلمى ستايل. ستقوم سلمى بمراجعته. سنرسل إليك إشعارًا عند مراجعته</string>
+    <string name="user_login_successful">تسجيل دخول المستخدم ناجح</string>
+    <string name="user_login_failed">فشل تسجيل دخول المستخدم</string>
+    <string name="network_failure">يعد هذا فشلًا فعليًا في الشبكة: (أبلغ المستخدم وربما أعد المحاولة</string>
+    <string name="user_register_successful">تسجيل المستخدم ناجح</string>
+    <string name="user_register_failed">فشل تسجيل المستخدم</string>
+    <string name="view_profile">عرض ملف التعريف الخاص بك</string>
+    <string name="failed_error">باءت بالفشل</string>
+    <string name="profile_updated_successfully">تم تحديث الملف الشخصي بنجاح</string>
+    <string name="password_changed_successfully">تم تغيير الرقم السري بنجاح</string>
+    <string name="view_profile_detal">يرجى عرض تفاصيل المنتج الخاص بك</string>
+    <string name="this_product_pending">هذا المنتج معلق. برجاء انتظار مراجعة سلمى ستايل</string>
+    <string name="this_has_not_scaned">لم يتم فحص هذا من قبل في سلمى ستايل. هل تريد ان تضيف؟</string>
+    <string name="logout_success">تسجيل الخروج بنجاح</string>
+    <string name="logout_failed">فشل تسجيل الخروج</string>
+    <string name="notification_clear">تم مسح الإخطار بنجاح</string>
+    <string name="notification_delete">حذف الإخطار بنجاح</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="veriFydesc">لقد أرسلنا رمزًا للتحقق من الحساب ثم نسينا كلمة المرور الخاصة بك</string>
+    <string name="verify">يؤكد</string>
+    <string name="update_product_img">التقط صورة صورة المنتج</string>
+    <string name="enter_mobileno">أدخل رقم هاتفك المحمول</string>
+    <string name="pass_changed">تم تغيير الرقم السري بنجاح</string>
+    <string name="add_product_image">افزودن تصویر محصول</string>
+    <string name="add_ingerident_image">تصویر Ingerident را اضافه کنید</string>
+    <string name="add_nutrition_image">تصویر واقعیت تغذیه را اضافه کنید</string>
+    <string name="add_barcode_image">اضافه کردن تصویر بارکد</string>
+    <string name="previous">قبلی</string>
+    <string name="please_select_photo">لطفا عکس را انتخاب کنید</string>
+    <string name="approved_text"> این محصول سالمی است. </string>
+    <string name="rej">رد شد:</string>
+    <string name="rejected_txt">این محصول سالم نیست و توصیه نمی شود.</string>
+    <string name="pen">معلق:</string>
+    <string name="pending_txt">در انتظار بررسی سلما</string>
+    <string name="not_clr_photo">تصاویر واضح نیست:</string>
+    <string name="not_clr_txt"> عکس یا عکس های محصول واضح نیست برای بررسی</string>
+    <string name="occ_txt">سلما گاه و بیگاه تایید می کند:</string>
+    <string name="occ_txt_line">محصول سالمی نیست اما گهگاه به مقدار کم موردی ندارد. </string>
+    <string name="rej_while_diet">ممنوع در زمان رژیم:</string>
+    <string name="rej_while_diet_txt">این محصول خوبی است اما بهتر است در زمان رژیم لاغری مصرف نشود</string>
+    <string name="app_guidance">راهنمای برنامه</string>
+    <string name="approve_label">تایید شده:</string>
+    <string name="detail">جزئیات</string>
+    <string name="scan_prod">اسکن محصول</string>
+    <string name="phone_no_exist">شماره تلفن از قبل وجود دارد.</string>
+    <string name="click_product_above">برای اسکن بارکد محصول روی بالا کلیک کنید</string>
+    <string name="phone_not_exist">شماره تلفن وجود ندارد</string>
+    <string name="delete_account">حذف حساب کاربری</string>
+    <string name="are_you_sure_to_delete">آیا مطمئن هستید که حساب کاربری را حذف می کنید؟</string>
+    <string name="delete_account_successfully">حذف حساب با موفقیت</string>
+    <string name="scan_prod_barcode_frag">برای اسکن بارکد محصول روی بالا کلیک کنید</string>
+    <string name="signup_successfully">با موفقیت ثبت نام کنید</string>
+    <string name="already_have_an_account">هل لديك حساب؟</string>
+</resources>

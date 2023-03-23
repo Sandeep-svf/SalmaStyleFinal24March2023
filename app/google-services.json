@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "616312997143",
+    "project_id": "salmastyle-97232",
+    "storage_bucket": "salmastyle-97232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616312997143:android:2f60f87e29c6716f63e352",
+        "android_client_info": {
+          "package_name": "com.barcode.salmaStyle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616312997143-k18149qh970ft1m9t1v66kv3hvvtq4gv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.barcode.salmaStyle",
+            "certificate_hash": "b0dfd95eee555e6b949fc194ec41b888d56c4ad1"
+          }
+        },
+        {
+          "client_id": "616312997143-tkuhu1ueft0ieqddakq9s2a90156d73i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXK_7woVC5rtt1hcbWrNZ5z2yv4bj3I3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616312997143-tkuhu1ueft0ieqddakq9s2a90156d73i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "616312997143-ceeqrvvalnab0ugl3t3n39bfkocuue8j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.salmastyle.com",
+                "app_store_id": "12345678"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

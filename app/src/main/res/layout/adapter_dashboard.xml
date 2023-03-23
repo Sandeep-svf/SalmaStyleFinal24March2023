@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/adp_dash_outer_width"
+    android:layout_height="@dimen/adp_dash_outer_height"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintWidth_percent="0.25"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/doubleup"
+        android:id="@+id/exp_img"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        android:background="@color/cream_color"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/card_whole"
+        android:padding="@dimen/adp_outer_card_padding"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/adp_outer_card_margin_top_bottom"
+        android:layout_marginBottom="@dimen/adp_outer_card_margin_top_bottom"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_border"
+        >
+
+
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/adp_inner_card_height"
+       app:layout_constraintTop_toTopOf="parent"
+       android:padding="@dimen/adp_inner_card_padding"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:id="@+id/dash_img_logo"
+       app:cardCornerRadius="18dp"
+       app:cardElevation="8dp"
+
+       >
+
+
+
+       <ImageView
+           android:id="@+id/dash_img_logo1"
+           android:layout_width="match_parent"
+           android:layout_height="158dp"
+           android:background="@color/cream_color"
+           android:scaleType="fitXY"
+           android:src="@drawable/dabur"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+
+           />
+
+   </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dash_img_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:text="Product Name"
+
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/rec_prod_name"
+        android:textSize="@dimen/approved_date_text_size"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

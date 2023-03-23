@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barcode.salmaStyle.uploadimagescreen.ProductImageFragment">
+
+    <include
+        layout="@layout/upload_image_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/ingerident_toolbar"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingerident_toolbar"
+        android:layout_marginTop="50dp"
+        android:text="@string/updatake_photo_ingerident"
+        android:textSize="20sp"
+        android:id="@+id/product_image"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_ingerident"
+        android:src="@drawable/rectangle_background"
+        android:scaleType="fitXY"
+        />
+
+
+   <!-- <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/edit"
+        app:layout_constraintTop_toBottomOf="@+id/img_ingerident"
+       app:layout_constraintStart_toEndOf="@+id/img_ingerident"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-15dp"
+        />-->
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/img_ingerident"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:background="@drawable/clearall_background"
+        android:padding="10dp"
+        />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/img_ingerident"
+        android:text="@string/add_ingerident_image"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:background="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/upload_image_button"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/clearall_background"
+        app:layout_constraintTop_toBottomOf="@+id/upload_image_button"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/next"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/next_ingerident"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/clearall_background"
+        app:layout_constraintTop_toBottomOf="@+id/upload_image_button"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/previous"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/previous_ingerident_img"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

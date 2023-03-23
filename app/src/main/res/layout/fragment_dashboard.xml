@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.barcode.salmaStyle.fragment.DashboardFragment"
+    android:background="@color/cream_color"
+    >
+
+
+  <!-- <ImageView
+       android:layout_width="@dimen/dashboard_barcode_width"
+       android:layout_height="@dimen/dashboard_barcode_height"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="10dp"
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/img_static_barcode"
+       android:src="@drawable/barcodelogo"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_static_barcode"
+        android:layout_marginStart="10dp"
+        android:text="@string/scan_product"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/scan_prod_barcode"
+        android:layout_marginTop="@dimen/dashboard_margin_top"
+        android:textSize="@dimen/scan_prod_text_size"
+        />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/barcode_logo_width_height"
+        android:layout_height="@dimen/barcode_logo_width_height"
+        android:layout_marginTop="@dimen/dashboard_margin_top"
+        android:background="@drawable/gradient"
+        android:id="@+id/card_barcode_scan_dash"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/scan_prod_barcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:roundPercent="1"
+        android:src="@drawable/ic_baseline_qr_code_scanner_24"
+        android:tint="@color/white"
+        />-->
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/cons_rec_more"
+       android:layout_marginTop="10dp"
+       >
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/recent_scan"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/recent_scan"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/scan_prod_text_size"
+        />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cons_rec_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/clearall_background"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:visibility="visible"
+        android:textSize="12sp"
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/more"
+       app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:id="@+id/dashboard_recycle"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/more"
+        app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:text="more..."
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
