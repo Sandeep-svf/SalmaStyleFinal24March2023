@@ -154,4 +154,9 @@
     <string name="scan_prod_barcode_frag">برای اسکن بارکد محصول روی بالا کلیک کنید</string>
     <string name="signup_successfully">با موفقیت ثبت نام کنید</string>
     <string name="already_have_an_account">هل لديك حساب؟</string>
+    <string name="verified">تم التحقق</string>
+    <string name="your_email_already_verified">تم التحقق من عنوان بريدك الإلكتروني بالفعل.</string>
+    <string name="wrong_otp">OTP خاطئ. حاول مرة اخرى.</string>
+    <string name="success_otp">تحقق OTP بنجاح.</string>
+    <string name="verify_email">يرجى التحقق من البريد الإلكتروني.</string>
 </resources>

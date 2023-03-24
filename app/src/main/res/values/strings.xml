@@ -155,8 +155,7 @@
     <string name="signup_successfully">signup successfully</string>
     <string name="already_have_an_account">already have an account?</string>
     <string name="verified">Verified</string>
-    <string name="your_email_already_verified">Your email address already verified.</string>
+    <string name="your_email_already_verified">Your email address has already been verified.</string>
     <string name="wrong_otp">Wrong OTP. Please try again.</string>
-    <string name="success_otp">OTP verification successfull.</string>
-    <string name="verify_email">Please verify email.</string>
+    <string name="success_otp">OTP verification is successfull.</string>
 </resources>
