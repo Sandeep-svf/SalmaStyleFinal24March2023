@@ -158,4 +158,5 @@
     <string name="your_email_already_verified">Your email address has already been verified.</string>
     <string name="wrong_otp">Wrong OTP. Please try again.</string>
     <string name="success_otp">OTP verification is successfull.</string>
+    <string name="verify_email">Please verify the email.</string>
 </resources>

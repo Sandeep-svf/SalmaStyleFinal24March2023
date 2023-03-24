@@ -874,6 +874,7 @@ public class SignupActivity extends Originator {
                             // show popup
                             popup();
                         } else {
+                            Toast.makeText(SignupActivity.this, message, Toast.LENGTH_LONG).show();
                             Toast.makeText(SignupActivity.this, R.string.failed_error, Toast.LENGTH_LONG).show();
 
                         }

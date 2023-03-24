@@ -190,6 +190,8 @@ public class UpdateProfileActivity extends Originator {
                             // show popup
                             popup();
                         } else {
+                            Toast.makeText(UpdateProfileActivity.this,message, Toast.LENGTH_LONG).show();
+
                             Toast.makeText(UpdateProfileActivity.this, R.string.failed_error, Toast.LENGTH_LONG).show();
 
                         }
@@ -895,6 +897,7 @@ public class UpdateProfileActivity extends Originator {
                             verify_button.setTextColor(getResources().getColor(R.color.green));
 
                         } else {
+                           // Toast.makeText(UpdateProfileActivity.this, message, Toast.LENGTH_LONG).show();
                             Toast.makeText(UpdateProfileActivity.this, message, Toast.LENGTH_LONG).show();
 
                         }
