@@ -31,6 +31,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.barcode.salmaStyle.login.SignupActivity;
+import com.barcode.salmaStyle.model.EmilaVerificationOtpModel;
 import com.barcode.salmaStyle.model.SignupModel;
 import com.bumptech.glide.Glide;
 import com.barcode.salmaStyle.R;
@@ -82,6 +84,7 @@ public class UpdateProfileActivity extends Originator {
     AppCompatButton verify_button;
     private String verifiedData="";
     private boolean emailVerificationFlag = false;
+    private String otpDataResponse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -169,16 +172,17 @@ public class UpdateProfileActivity extends Originator {
 
         CustomProgressbar.showProgressBar(this, false);
         APIService service = ApiClientNoToken.getClient().create(APIService.class);
-        retrofit2.Call<SignupModel> call = service.verify_email(email2);
-        call.enqueue(new Callback<SignupModel>() {
+        retrofit2.Call<EmilaVerificationOtpModel> call = service.verify_email(email2);
+        call.enqueue(new Callback<EmilaVerificationOtpModel>() {
             @Override
-            public void onResponse(@NonNull retrofit2.Call<SignupModel> call, @NonNull retrofit2.Response<SignupModel> response) {
+            public void onResponse(@NonNull retrofit2.Call<EmilaVerificationOtpModel> call, @NonNull retrofit2.Response<EmilaVerificationOtpModel> response) {
                 CustomProgressbar.hideProgressBar();
 
                 try {
                     if (response.isSuccessful()) {
                         String message = response.body().getMessage();
                         String success=response.body().getStatus();
+                        otpDataResponse = String.valueOf(response.body().getOtp());
 
                         if (success.equalsIgnoreCase("True")) {
                             Toast.makeText(UpdateProfileActivity.this, message, Toast.LENGTH_LONG).show();
@@ -234,7 +238,7 @@ public class UpdateProfileActivity extends Originator {
             }
 
             @Override
-            public void onFailure(@NonNull Call<SignupModel> call, Throwable t) {
+            public void onFailure(@NonNull Call<EmilaVerificationOtpModel> call, Throwable t) {
                 CustomProgressbar.hideProgressBar();
                 if (t instanceof IOException) {
                     Toast.makeText(UpdateProfileActivity.this, R.string.network_failure, Toast.LENGTH_SHORT).show();
@@ -450,7 +454,11 @@ public class UpdateProfileActivity extends Originator {
                     Toast toast = Toast.makeText(UpdateProfileActivity.this, getString(R.string.enter_mobileno), Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.CENTER, 0, 0);
                     toast.show();
-                } else {
+                } else if(!edt_email.getText().toString().equals(verifiedData)){
+                    Toast toast = Toast.makeText(UpdateProfileActivity.this, getString(R.string.verify_email), Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                }else {
                     updatprofileApi(phone_with_country);
                 }
             }
@@ -839,7 +847,7 @@ public class UpdateProfileActivity extends Originator {
             public void onClick(View view) {
 
 
-                dialogs.dismiss();
+
                 // call varification function here......
                 String otpData = ""+numOne.getText().toString()+
                         numTwo.getText().toString()+
@@ -849,9 +857,17 @@ public class UpdateProfileActivity extends Originator {
                         numSix.getText().toString();
 
                 Log.e("test_sam_otpdata",otpData+"ok");
+                Log.e("test_sam_otpdata",otpDataResponse+"ok");
 
-                email_otp_verification_api(otpData);
-
+                if(otpDataResponse.equals(otpData)){
+                    Toast.makeText(UpdateProfileActivity.this, getResources().getString(R.string.success_otp), Toast.LENGTH_SHORT).show();
+                    verifiedData = edt_email.getText().toString();
+                    verify_button.setText(getResources().getString(R.string.verified));
+                    verify_button.setTextColor(getResources().getColor(R.color.green));
+                    dialogs.dismiss();
+                }else{
+                    Toast.makeText(UpdateProfileActivity.this, getResources().getString(R.string.wrong_otp), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -860,7 +876,7 @@ public class UpdateProfileActivity extends Originator {
 
         CustomProgressbar.showProgressBar(this, false);
         APIService service = ApiClientNoToken.getClient().create(APIService.class);
-        retrofit2.Call<SignupModel> call = service.verify_email_otp(otpData);
+        retrofit2.Call<SignupModel> call = service.verify_email_otp2(otpData);
         call.enqueue(new Callback<SignupModel>() {
             @Override
             public void onResponse(@NonNull retrofit2.Call<SignupModel> call, @NonNull retrofit2.Response<SignupModel> response) {

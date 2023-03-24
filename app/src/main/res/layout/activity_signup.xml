@@ -181,13 +181,13 @@
                                     android:textSize="12sp"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintWidth_percent="0.725" />
+                                    app:layout_constraintWidth_percent="0.675" />
                                 <androidx.appcompat.widget.AppCompatButton
                                     android:id="@+id/verify_button"
                                     android:layout_width="0dp"
                                     android:textStyle="bold"
                                     android:layout_height="match_parent"
-                                    app:layout_constraintWidth_percent="0.25"
+                                    app:layout_constraintWidth_percent="0.3"
                                     app:layout_constraintStart_toEndOf="@+id/edt_email"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"

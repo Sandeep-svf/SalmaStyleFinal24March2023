@@ -7,6 +7,7 @@ import com.barcode.salmaStyle.model.ClearNotificationModel;
 import com.barcode.salmaStyle.model.CountryCodeMOdel;
 import com.barcode.salmaStyle.model.DeleteAccModel;
 import com.barcode.salmaStyle.model.EditImageModel;
+import com.barcode.salmaStyle.model.EmilaVerificationOtpModel;
 import com.barcode.salmaStyle.model.LogoutModel;
 import com.barcode.salmaStyle.model.NotificationDeleteModel;
 import com.barcode.salmaStyle.model.NotificationModel;
@@ -145,11 +146,11 @@ public interface APIService {
 
     @FormUrlEncoded
     @POST(ServiceUrlList.email)
-    Call<SignupModel> verify_email(@Field("email") String email);
+    Call<EmilaVerificationOtpModel> verify_email(@Field("email") String email);
 
 
     @FormUrlEncoded
     @POST(ServiceUrlList.email_verify_otp)
-    Call<SignupModel> verify_email_otp(@Field("verify_email_otp") String verify_email_otp);
+    Call<SignupModel> verify_email_otp2(@Field("verify_email_otp") String verify_email_otp);
 
 }
