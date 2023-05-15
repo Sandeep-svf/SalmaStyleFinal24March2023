@@ -15,6 +15,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.barcode.salmaStyle.R;
+import com.barcode.salmaStyle.RetroifitApi.UrlClass;
 import com.barcode.salmaStyle.utol.Logger;
 import com.barcode.salmaStyle.utol.Originator;
 import com.barcode.salmaStyle.utol.SharedPrefClass;
@@ -60,7 +61,7 @@ public class AboutusActivity extends Originator {
             Configuration config2 = new Configuration();
             config2.locale = locale2;
             AboutusActivity.this.getBaseContext().getResources().updateConfiguration(config2, AboutusActivity.this.getBaseContext().getResources().getDisplayMetrics());
-            url = "http://69.49.235.253:8000/en/farsi/aboutus/";
+            url = UrlClass.BaseUrl+"farsi/aboutus/";
             webView.loadUrl(url);
             Logger.line(Logger.LoggerMessage.product_image_url, true, Logger.getThread(Thread.currentThread().getStackTrace()[2]),
                     "View_On_Website_Activity",
@@ -74,7 +75,7 @@ public class AboutusActivity extends Originator {
             config2.locale = locale2;
             AboutusActivity.this.getBaseContext().getResources().updateConfiguration(config2, AboutusActivity.this.getBaseContext().getResources().getDisplayMetrics());
 
-            url = "http://69.49.235.253:8000/en/aboutus/";
+            url = UrlClass.BaseUrl+ "aboutus/";
             webView.loadUrl(url);
             Logger.line(Logger.LoggerMessage.product_image_url, true, Logger.getThread(Thread.currentThread().getStackTrace()[2]),
                     "View_On_Website_Activity",

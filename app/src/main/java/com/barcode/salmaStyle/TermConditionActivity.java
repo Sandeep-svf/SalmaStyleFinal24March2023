@@ -15,6 +15,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.barcode.salmaStyle.R;
+import com.barcode.salmaStyle.RetroifitApi.UrlClass;
 import com.barcode.salmaStyle.utol.Logger;
 import com.barcode.salmaStyle.utol.Originator;
 import com.barcode.salmaStyle.utol.SharedPrefClass;
@@ -58,7 +59,7 @@ public class TermConditionActivity extends Originator {
             Configuration config2 = new Configuration();
             config2.locale = locale2;
             TermConditionActivity.this.getBaseContext().getResources().updateConfiguration(config2, TermConditionActivity.this.getBaseContext().getResources().getDisplayMetrics());
-            url = "http://69.49.235.253:8000/en/farsi/termsandconditions/";
+            url = UrlClass.BaseUrl+"farsi/termsandconditions/";
             webView.loadUrl(url);
             Logger.line(Logger.LoggerMessage.product_image_url, true, Logger.getThread(Thread.currentThread().getStackTrace()[2]),
                     "View_On_Website_Activity",
@@ -73,7 +74,7 @@ public class TermConditionActivity extends Originator {
             TermConditionActivity.this.getBaseContext().getResources().updateConfiguration(config2, TermConditionActivity.this.getBaseContext().getResources().getDisplayMetrics());
 
 
-            url = "http://69.49.235.253:8000/en/termsandconditions/";
+            url = UrlClass.BaseUrl+"termsandconditions/";
             webView.loadUrl(url);
             Logger.line(Logger.LoggerMessage.product_image_url, true, Logger.getThread(Thread.currentThread().getStackTrace()[2]),
                     "View_On_Website_Activity",
